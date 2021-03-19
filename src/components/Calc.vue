@@ -2,7 +2,7 @@
     <div class="main">
         <div class="calc-container">
             <div class="calc-results">
-                <span class="result">0</span>
+                <span class="result">result</span>
             </div>
             <div class="calc-buttons">
                 <div class="num-buttons">
@@ -38,7 +38,12 @@
 
 <script>
 export default {
-    name: 'Calc'
+    name: 'Calc',
+    data() {
+        return {
+            result: 0
+        }
+    },
 }
 </script>
 
